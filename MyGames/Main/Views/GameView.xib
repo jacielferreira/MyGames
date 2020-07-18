@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController" customModule="MyGames" customModuleProvider="target">
+            <connections>
+                <outlet property="ivCover" destination="KfQ-FC-KYL" id="hfs-Ss-xcS"/>
+                <outlet property="lbConsole" destination="4TQ-DN-DKk" id="Vu5-Io-gMc"/>
+                <outlet property="lbReleaseDate" destination="YUm-1v-c0n" id="mic-ac-Fe6"/>
+                <outlet property="lbTitle" destination="pVq-aJ-3AR" id="Gut-1C-IWa"/>
+                <outlet property="view" destination="QTL-CP-wcM" id="6uE-hj-c5t"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QTL-CP-wcM">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plataforma" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TQ-DN-DKk">
+                    <rect key="frame" x="16" y="163.5" width="382" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo do Jogo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVq-aJ-3AR">
+                    <rect key="frame" x="16" y="76" width="382" height="31.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="KfQ-FC-KYL">
+                    <rect key="frame" x="32" y="219.5" width="350" height="610.5"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lançamento" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUm-1v-c0n">
+                    <rect key="frame" x="16" y="123.5" width="382" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KfQ-FC-KYL" firstAttribute="leading" secondItem="npL-rP-VMn" secondAttribute="leading" constant="32" id="5iw-ib-BGd"/>
+                <constraint firstItem="pVq-aJ-3AR" firstAttribute="leading" secondItem="npL-rP-VMn" secondAttribute="leading" constant="16" id="LAm-qa-1wM"/>
+                <constraint firstItem="YUm-1v-c0n" firstAttribute="width" secondItem="pVq-aJ-3AR" secondAttribute="width" id="S6q-BZ-bhd"/>
+                <constraint firstItem="npL-rP-VMn" firstAttribute="trailing" secondItem="KfQ-FC-KYL" secondAttribute="trailing" constant="32" id="WSg-5i-NkT"/>
+                <constraint firstItem="YUm-1v-c0n" firstAttribute="top" secondItem="pVq-aJ-3AR" secondAttribute="bottom" constant="16" id="YaX-3F-bSK"/>
+                <constraint firstItem="4TQ-DN-DKk" firstAttribute="width" secondItem="YUm-1v-c0n" secondAttribute="width" id="f7A-rE-czy"/>
+                <constraint firstItem="npL-rP-VMn" firstAttribute="trailing" secondItem="pVq-aJ-3AR" secondAttribute="trailing" constant="16" id="jk0-xz-KWf"/>
+                <constraint firstItem="KfQ-FC-KYL" firstAttribute="top" secondItem="4TQ-DN-DKk" secondAttribute="bottom" constant="32" id="lbe-Ww-eHj"/>
+                <constraint firstItem="4TQ-DN-DKk" firstAttribute="leading" secondItem="YUm-1v-c0n" secondAttribute="leading" id="nZs-fY-4bd"/>
+                <constraint firstItem="4TQ-DN-DKk" firstAttribute="top" secondItem="YUm-1v-c0n" secondAttribute="bottom" constant="16" id="p5H-XR-gzo"/>
+                <constraint firstItem="YUm-1v-c0n" firstAttribute="leading" secondItem="pVq-aJ-3AR" secondAttribute="leading" id="sUG-pY-kS2"/>
+                <constraint firstItem="pVq-aJ-3AR" firstAttribute="top" secondItem="npL-rP-VMn" secondAttribute="top" constant="32" id="tZd-gu-6FH"/>
+                <constraint firstItem="npL-rP-VMn" firstAttribute="bottom" secondItem="KfQ-FC-KYL" secondAttribute="bottom" constant="32" id="yQ3-2S-gxt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="npL-rP-VMn"/>
+            <point key="canvasLocation" x="136.80000000000001" y="105.66502463054188"/>
+        </view>
+    </objects>
+</document>
